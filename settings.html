@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+    .container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+  </style>
+    <link rel="stylesheet" href="ass.css">
+</head>
+<body style="background-image: url(bow4.jpg); background-repeat: no-repeat; background-size: cover;"></body>>
+  <header>
+    <h1 style="text-align: center; color: aliceblue;">Settings Page</h1>
+  </header>
+  <div class="container" style="margin-left: 500px;">
+    <section id="general">
+      <h2>General Settings</h2>
+      <label for="theme">Select Theme:</label>
+      <select id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+      <label for="notifications">Enable Notifications:</label>
+      <input type="checkbox" id="notifications" checked>
+    </section>
+    <section id="account">
+      <h2>Account Settings</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your username">
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter your email">
+    </section>
+    <section id="privacy">
+      <h2>Privacy Settings</h2>
+      <label for="tracking">Allow Tracking:</label>
+      <input type="checkbox" id="tracking" checked>
+    </section>
+  </div>
+  <footer>
+    <p> &copy this website was created by<i style="color: #ff0015;"> Dhanush N</i></p></footer>
+</body>
+</html>

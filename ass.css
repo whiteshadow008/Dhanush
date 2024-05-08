@@ -1,0 +1,143 @@
+.container{ justify-content:space-around;
+    align-content: center;
+width: auto;
+margin:10px 20% auto 20%}
+.nav-bar{overflow: hidden;
+position: absolute;
+justify-content:space-around;
+
+padding: 10px 30px 10px 40px;
+}
+ a
+{float:left;
+background-color: #f5f5f5;
+text-align: center;
+padding: 10px 40px 10px 40px;
+}
+a:hover{background-color: rgb(243, 100, 162);
+text-decoration: dotted;}
+footer{background-image: url(headimg.jpg);
+    position: fixed;
+    padding: 5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 7%);
+    color: #fb0b0b;
+    text-align:center;}
+    .nav-barh{overflow: hidden;
+        position: absolute;
+        justify-content:space-around;
+        
+        padding: 80px 40px 50px 10px;
+        }
+    header{background-image: url(headimg.jpg);
+     padding: 5px;}
+.img1{size: 10px;height: 80px; width: 100px;
+}
+marquee{ background-color: yellow;
+color: blue;
+animation: infinite;
+margin-left: 450px;
+margin-right: 500px;}
+.settings{display:inline-block;
+}
+.main{display:none;}
+.main:target{display: block;}
+.rp{margin: 10px 1200px 10px 0px;
+background-color: black;
+position: absolute;}
+.div1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: red;
+    position:relative;
+    animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-direction: reverse;  
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:1500px; top:0px;}
+    50%  {background-color:blue; left:1500px; top:650px;}
+    75%  {background-color:rgb(235, 14, 154); left:0px; top:650px;}
+    100% {background-color:red; left:0px; top:0px;}}
+    .div2 {
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        background-color: red;
+        position:relative;
+        animation-iteration-count: infinite;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-direction: reverse;  
+      }
+      
+      @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:1500px; top:0px;}
+        50%  {background-color:blue; left:500px; top:650px;}
+        75%  {background-color:rgb(235, 14, 154); left:0px; top:650px;}
+        100% {background-color:red; left:0px; top:0px;}}
+        .div3 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background-color: red;
+            position:relative;
+            animation-iteration-count: 5;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-direction: reverse;  
+          }
+          
+          @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:100px; top:0px;}
+            30%  {background-color:blue; left:1590px; top:60px;}
+            50%  {background-color:blue; left:1590px; top:60px;}
+            75%  {background-color:rgb(235, 14, 154); left:0px; top:650px;}
+            100% {background-color:red; left:0px; top:0px;}}
+.div4 {
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                background-color: red;
+                position:relative;
+                animation-iteration-count: 5;
+                animation-name: example;
+                animation-duration: 6s;
+                animation-direction: reverse;  
+}
+              
+              @keyframes example {
+                0%   {background-color:rgb(14, 232, 65); left:0px; top:0px;}
+                25%  {background-color:yellow; left:1500px; top:0px;}
+                50%  {background-color:blue; left:100px; top:50px;}
+                75%  {background-color:rgb(235, 14, 154); left:0px; top:650px;}
+                100% {background-color:rgb(13, 11, 11); left:0px; top:0px;}
+              }
+              .flex-container {
+                display: flex;
+                gap: 1px;
+                flex-wrap: wrap;
+                width: 603px;
+                height: 268px;
+                background-color: hsl(135, 90%, 55%);
+                padding: 1px;
+                position: absolute;
+                margin: 100px 450px 30px 435px;
+              }
+              .flex-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 0px ;
+                width: 200px;
+                font-size: 20px 0;
+                gap: 0;
+              }body{     background-repeat: no-repeat;
+                          background: size 2000px;;}

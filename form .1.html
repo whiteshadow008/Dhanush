@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dhanush 108</title>
+<style>
+.error {
+  color: red;
+}
+.div1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: red;
+  position:relative;
+  animation-iteration-count: 5;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:1400px; top:0px;}
+  50%  {background-color:blue; left:1400px; top:500px;}
+  75%  {background-color:rgb(235, 14, 154); left:0px; top:500px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+</style>
+</head>
+<body style="background-image: url(gback.png!f305cw); background-repeat: no-repeat; background-size: cover;">
+  <header style="background-color: aqua; padding: 10px;">
+<h2 style="text-align: center; color: crimson;">Fill the form to enter the website</h2></header><div class="div1"></div><fieldset style="margin:100px 500px 500px 500px ; background-color: greenyellow;">
+<form id="myForm" style="text-align: center;">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <span class="error" id="nameError"></span>
+  </div><br>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <span class="error" id="emailError"></span>
+  </div><br>
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br>
+    <span class="error" id="phoneError"></span>
+  </div><br><button id="button" type="submit">submit</button><button id="get-started-button" style="display: none;">
+<a href="file:///E:/whiteshadow/dd/FWD/dd%20assaignment%202/MAINPAGE.html"
+>GET STARTED</a></button>
+  <button type="reset">Reset</button>
+
+</form></fieldset>
+<script>
+
+const form = document.getElementById('myForm');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  
+  const nameError = document.getElementById('nameError');
+  const emailError = document.getElementById('emailError');
+  const phoneError = document.getElementById('phoneError');
+  
+  nameError.textContent = '';
+  emailError.textContent = '';
+  phoneError.textContent = '';
+  const submitButton = document.getElementById('button');
+const getStartedButton = document.getElementById('get-started-button');
+
+// Add event listener to the submit button
+submitButton.addEventListener('click', function() {
+    // Hide the submit button
+    submitButton.style.display = 'none';
+    // Show the get started button
+    getStartedButton.style.display = 'block';
+});  
+  let isValid = true;
+  
+  if (name === '') {
+    nameError.textContent = 'Name is required';
+    isValid = false;
+  }
+  
+  if (!isValidEmail(email)) {
+    emailError.textContent = 'Please enter a valid email address';
+    isValid = false;
+  }
+  
+  if (!isValidPhoneNumber(phone)) {
+    phoneError.textContent = 'Please enter a valid phone number';
+    isValid = false;
+  }
+  
+  if (isValid) {
+    alert('Form submitted successfully!');
+  }
+});
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function isValidPhoneNumber(phone) {
+  const phoneRegex = /^\d{10}$/;
+  return phoneRegex.test(phone);
+}
+</script>
+</body>
+</html>
